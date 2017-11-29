@@ -75,15 +75,12 @@ def main():
     #   First number:  bigger means faster.
     #   Second number: bigger means slower.
     window.tracer(1, 1)
-
     jump_and_move_turtle(100, 50, 200, -100)
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-
-
     window.close_on_mouse_click()
 
 
@@ -163,7 +160,7 @@ def turtle3():
 
 def try_methods():
     dog = rg.SimpleTurtle()
-    dog.pen = rg.Pen('brown',5)
+    dog.pen = rg.Pen('brown', 5)
     dog.forward(150)
     dog.left(90)
     dog.forward(50)
@@ -187,8 +184,8 @@ def try_methods():
 
 def try_functions():
     jump_and_move_turtle(200, 200, 300, 30)
-    jump_and_move_turtle(100,200,0,0)
-    jump_and_move_turtle(-50,50,100,100)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
     """
     Causes several SimpleTurtles to do the following:
@@ -211,15 +208,21 @@ def try_functions():
 
 
 def try_methods_and_functions():
-    dave = rg.SimpleTurtle
-    dave.pen = rg.Pen('blue',5)
+    dave = rg.SimpleTurtle()
+    dave.pen = rg.Pen('blue', 5)
     dave.backward(150)
-    dave.speed(1)
+    dave.speed = 1
     draw_many_squares(dave, 2, 100, 30)
-    dave.speed(5)
-
-
-
+    dave.speed = 5
+    dave.pen = rg.Pen('red', 5)
+    draw_many_squares(dave, 10, 50, 15)
+    dave.speed = 100
+    dave.pen = rg.Pen('red', 35)
+    draw_many_squares(dave, 8, 300, 60)
+    dave.pen = rg.Pen('black', 3)
+    dave.backward(50)
+    dave.draw_circle(30)
+    dave.draw_square(50)
 
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
@@ -253,7 +256,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
