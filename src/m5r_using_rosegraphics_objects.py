@@ -5,55 +5,55 @@ This module uses ROSEGRAPHICS to demonstrate:
   -- accessing their DATA via INSTANCE VARIABLES.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Tyler Foster.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              top left
 #
 #        -- In what direction on the screen does the positive X-axis point?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              left and right
 #
 #        -- In what direction on the screen does the positive Y-axis point?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              up and down
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            window = rg.TurtleWindow()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
 #         Hint: After you type the ( in the line of code, if you wait a moment PyCharm will add the ) and has a popup.)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            400,300
 #
 #     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            window = rg.RoseWindow(500, 100)
 #
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that you can construct OTHER than Circle and Point:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                square and regular_polygon
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               (Hint: Use the circle from the example3 function below with the dot trick to let PyCharm help you. )
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                attach_to, clone, and detach_from
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                center, defaults, and fill_color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            displays objects
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            if you want to look at what you just did with your turtle, to see if you got it right
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -81,7 +81,7 @@ def main():
 
 def example1():
     """ Displays an empty window. """
-    window = rg.RoseWindow(500, 300, 'Example 1: An empty window')
+    window = rg.RoseWindow(500, 250, 'Example 1: An empty window')
     window.close_on_mouse_click()
 
 
@@ -134,6 +134,7 @@ def example3():
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
     circle.attach_to(window)
+
 
     # ------------------------------------------------------------------
     # Rectangle: needs two opposite corners.

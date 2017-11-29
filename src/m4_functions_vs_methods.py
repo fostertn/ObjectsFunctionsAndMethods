@@ -166,6 +166,7 @@ def try_methods():
     dog.forward(50)
     dog.backward(100)
 
+
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
