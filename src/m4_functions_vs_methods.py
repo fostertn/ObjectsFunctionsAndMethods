@@ -186,6 +186,10 @@ def try_methods():
 
 
 def try_functions():
+    jump_and_move_turtle(200, 200, 300, 30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
+
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
@@ -193,7 +197,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -207,6 +211,16 @@ def try_functions():
 
 
 def try_methods_and_functions():
+    dave = rg.SimpleTurtle
+    dave.pen = rg.Pen('blue',5)
+    dave.backward(150)
+    dave.speed(1)
+    draw_many_squares(dave, 2, 100, 30)
+    dave.speed(5)
+
+
+
+
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.

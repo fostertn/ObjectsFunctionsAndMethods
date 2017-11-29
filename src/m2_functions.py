@@ -40,7 +40,6 @@ def main():
     turtle2()
     turtle2()
 
-
     window.close_on_mouse_click()
 
 
@@ -108,7 +107,7 @@ def turtle3():
 
 def turtle4():
     tyler = rg.SimpleTurtle()
-    tyler.pen = rg.Pen('black',30)
+    tyler.pen = rg.Pen('black', 30)
     tyler.forward(50)
     tyler.begin_fill()
     tyler.draw_circle(70)
@@ -117,7 +116,7 @@ def turtle4():
 
 def turtle5():
     aman = rg.SimpleTurtle()
-    aman.pen = rg.Pen('black',30)
+    aman.pen = rg.Pen('black', 30)
     aman.backward(50)
     aman.begin_fill()
     aman.draw_circle(70)
@@ -131,12 +130,6 @@ def turtle5():
     arjun.forward(300)
     arjun.draw_circle(50)
     arjun.end_fill()
-
-
-
-
-
-
 
 
 ########################################################################
